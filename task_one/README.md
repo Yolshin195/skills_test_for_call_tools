@@ -53,4 +53,27 @@ WHERE NOT EXISTS (
 )
 ```
 
+## Запуск базы данных
+```commandline
+docker-compose -f task_one/docker-compose.yml up -d
+```
 
+## Запуск тестов
+```commandline
+PYTHONPATH=. && python task_one/tests.py
+```
+
+## Пример использования
+```python
+async def main():
+    articles = await get_articles_without_comments()
+    for article in articles:
+        print(f"id={article["id"]}, title={article["title"]}")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+### Результат
+    id=2, title=Maecenas egestas fermentum rutrum
+    id=3, title=Nam vestibulum dignissim volutpat

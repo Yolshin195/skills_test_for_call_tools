@@ -28,3 +28,23 @@ X Æ A-12 45
 ...
 ```
 
+## Пример использования
+```python
+if __name__ == "__main__":
+    path = Path("records_of_hours_worked_by_employees.txt")
+    report = EmployeeWorkingHoursReport(path)
+    report.build()
+    print(report)
+```
+### Результат:
+    Андрей: 9, 6; sum: 18
+    Василий: 11; sum: 11
+    Роман: 7, 11; sum: 14
+    X Æ A-12: 45; sum: 45
+    Иван Петров: 3; sum: 3
+
+### Запуск тестов
+```commandline
+PYTHONPATH=. && python task_two/tests.py
+```
+

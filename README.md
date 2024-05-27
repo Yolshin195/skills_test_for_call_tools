@@ -1,4 +1,6 @@
-# skills_test_for_call_tools
+# Тестовое задание для компании Колл-Тулз
+
+## Задания
 
 1. Даны две таблицы в PostgresSQL - таблица статей и таблица комментариев к этим статьям 
 
@@ -67,4 +69,22 @@ X Æ A-12 45
 ...
 ```
 
+## Решения
+
+### Задание 1.
+Подробнее: [test_one](/task_one)
+
+#### Результат
+    id=2, title=Maecenas egestas fermentum rutrum
+    id=3, title=Nam vestibulum dignissim volutpat
+
+### Задание 2.
+Подробнее: [test_two](/task_two)
+
+#### Результат
+    Андрей: 9, 6; sum: 18
+    Василий: 11; sum: 11
+    Роман: 7, 11; sum: 14
+    X Æ A-12: 45; sum: 45
+    Иван Петров: 3; sum: 3
 

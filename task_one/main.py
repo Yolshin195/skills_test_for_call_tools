@@ -19,7 +19,7 @@ async def get_articles_without_comments():
 async def main():
     articles = await get_articles_without_comments()
     for article in articles:
-        print(article)
+        print(f"id={article["id"]}, title={article["title"]}")
 
 
 if __name__ == "__main__":

@@ -77,3 +77,10 @@ class EmployeeWorkingHoursReport:
 
     def __str__(self):
         return "\n".join(map(str, self.data.values()))
+
+
+if __name__ == "__main__":
+    path = Path("records_of_hours_worked_by_employees.txt")
+    report = EmployeeWorkingHoursReport(path)
+    report.build()
+    print(report)
