@@ -72,6 +72,17 @@ X Æ A-12 45
 ### Задание 1.
 Подробнее: [test_one](/task_one)
 
+#### Запрос
+```sql
+SELECT article.id, article.title, article.text 
+FROM article 
+WHERE NOT EXISTS (
+    SELECT 1 
+    FROM comment 
+    WHERE article.id = comment.article_id
+)
+```
+
 #### Результат
     id=2, title=Maecenas egestas fermentum rutrum
     id=3, title=Nam vestibulum dignissim volutpat
