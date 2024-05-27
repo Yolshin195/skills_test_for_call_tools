@@ -32,7 +32,7 @@ class EmployeeWorkingHours:
             return
 
         if isinstance(other, EmployeeWorkingHours):
-            self.total_hours += self.total_hours
+            self.total_hours += other.total_hours
             self.hours_list.extend(other.hours_list)
         return self
 
