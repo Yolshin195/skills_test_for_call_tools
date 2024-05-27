@@ -90,6 +90,15 @@ WHERE NOT EXISTS (
 ### Задание 2.
 Подробнее: [test_two](/task_two)
 
+#### Пример использования
+```python
+if __name__ == "__main__":
+    path = Path("records_of_hours_worked_by_employees.txt")
+    report = EmployeeWorkingHoursReport(path)
+    report.build()
+    print(report)
+```
+
 #### Результат
     Андрей: 9, 6; sum: 18
     Василий: 11; sum: 11
