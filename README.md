@@ -70,7 +70,7 @@ X Æ A-12 45
 ## Решение
 
 ### Задание 1.
-Подробнее: [test_one](/task_one)
+Подробнее: [task_one](/task_one)
 
 #### Запрос
 ```sql
@@ -88,7 +88,7 @@ WHERE NOT EXISTS (
     id=3, title=Nam vestibulum dignissim volutpat
 
 ### Задание 2.
-Подробнее: [test_two](/task_two)
+Подробнее: [task_two](/task_two)
 
 #### Пример использования
 ```python
