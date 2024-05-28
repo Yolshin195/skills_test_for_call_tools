@@ -53,6 +53,13 @@ WHERE NOT EXISTS (
 )
 ```
 
+## Установка
+```commandline
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
 ## Запуск базы данных
 ```commandline
 docker-compose -f task_one/docker-compose.yml up -d
